@@ -7,6 +7,7 @@
 //
 
 #import "YHWaveProgressView.h"
+#import "YYWeakProxy.h"
 
 #define YHFirstWaveColorDefault [UIColor colorWithRed:34/255.0 green:116/255.0 blue:210/255.0 alpha:1]
 #define YHSecondWaveColorDefault [UIColor colorWithRed:34/255.0 green:116/255.0 blue:210/255.0 alpha:0.3]
@@ -66,7 +67,7 @@
 #pragma mark - 开始波动动画
 - (void)startWaveAnimation {
     
-    self.timer = [CADisplayLink displayLinkWithTarget:self selector:@selector(waveAnimation)];
+    self.timer = [CADisplayLink displayLinkWithTarget:[YYWeakProxy proxyWithTarget:self] selector:@selector(waveAnimation)];
     [self.timer addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
 }
 
@@ -178,6 +179,7 @@
         [_secondWaveLayer removeFromSuperlayer];
         _secondWaveLayer = nil;
     }
+    
 }
 
 

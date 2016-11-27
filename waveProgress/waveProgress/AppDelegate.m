@@ -19,7 +19,7 @@
     
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    Class cls = NSClassFromString(@"YHViewController");
+    Class cls = NSClassFromString(@"YYHViewController");
     NSAssert([cls isSubclassOfClass:[UIViewController class]], @"类名不正确");
     
     UIViewController *vc = [cls new];

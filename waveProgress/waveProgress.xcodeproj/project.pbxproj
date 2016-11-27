@@ -13,6 +13,8 @@
 		EAD36B901DEACB940021D2E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAD36B8E1DEACB940021D2E1 /* LaunchScreen.storyboard */; };
 		EAD36B991DEACC0E0021D2E1 /* YHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD36B981DEACC0E0021D2E1 /* YHViewController.m */; };
 		EAD36B9D1DEACD580021D2E1 /* YHWaveProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD36B9C1DEACD580021D2E1 /* YHWaveProgressView.m */; };
+		EAD36BA01DEAEEEB0021D2E1 /* YYHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD36B9F1DEAEEEB0021D2E1 /* YYHViewController.m */; };
+		EAD36BA31DEAF0810021D2E1 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD36BA21DEAF0810021D2E1 /* YYWeakProxy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,10 @@
 		EAD36B981DEACC0E0021D2E1 /* YHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHViewController.m; sourceTree = "<group>"; };
 		EAD36B9B1DEACD580021D2E1 /* YHWaveProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHWaveProgressView.h; sourceTree = "<group>"; };
 		EAD36B9C1DEACD580021D2E1 /* YHWaveProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHWaveProgressView.m; sourceTree = "<group>"; };
+		EAD36B9E1DEAEEEB0021D2E1 /* YYHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYHViewController.h; sourceTree = "<group>"; };
+		EAD36B9F1DEAEEEB0021D2E1 /* YYHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYHViewController.m; sourceTree = "<group>"; };
+		EAD36BA11DEAF0810021D2E1 /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
+		EAD36BA21DEAF0810021D2E1 /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,8 @@
 				EAD36B9A1DEACD2F0021D2E1 /* YHWaveProgress */,
 				EAD36B971DEACC0E0021D2E1 /* YHViewController.h */,
 				EAD36B981DEACC0E0021D2E1 /* YHViewController.m */,
+				EAD36B9E1DEAEEEB0021D2E1 /* YYHViewController.h */,
+				EAD36B9F1DEAEEEB0021D2E1 /* YYHViewController.m */,
 				EAD36B8C1DEACB940021D2E1 /* Assets.xcassets */,
 				EAD36B8E1DEACB940021D2E1 /* LaunchScreen.storyboard */,
 				EAD36B911DEACB940021D2E1 /* Info.plist */,
@@ -85,6 +93,8 @@
 			children = (
 				EAD36B9B1DEACD580021D2E1 /* YHWaveProgressView.h */,
 				EAD36B9C1DEACD580021D2E1 /* YHWaveProgressView.m */,
+				EAD36BA11DEAF0810021D2E1 /* YYWeakProxy.h */,
+				EAD36BA21DEAF0810021D2E1 /* YYWeakProxy.m */,
 			);
 			path = YHWaveProgress;
 			sourceTree = "<group>";
@@ -162,8 +172,10 @@
 			files = (
 				EAD36B851DEACB940021D2E1 /* AppDelegate.m in Sources */,
 				EAD36B991DEACC0E0021D2E1 /* YHViewController.m in Sources */,
+				EAD36BA31DEAF0810021D2E1 /* YYWeakProxy.m in Sources */,
 				EAD36B821DEACB940021D2E1 /* main.m in Sources */,
 				EAD36B9D1DEACD580021D2E1 /* YHWaveProgressView.m in Sources */,
+				EAD36BA01DEAEEEB0021D2E1 /* YYHViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
