@@ -32,6 +32,12 @@
 
 #pragma mark - 设置界面
 
+/**
+ 
+ 缺陷,当显示两层波浪的时候,第二层波浪设置的颜色会覆盖第一个波浪在底部显示的颜色
+ 所以要设置两个波浪的颜色尽量接近,显示的视觉效果好点
+ */
+
 - (void)setupUI {
     YHWaveProgressView *waveProgressOne = [[YHWaveProgressView alloc] initWithFrame:CGRectMake(0, 0, 150, 150)];
     [self.view addSubview:waveProgressOne];
