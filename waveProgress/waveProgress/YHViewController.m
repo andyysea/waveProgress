@@ -7,6 +7,8 @@
 //
 
 #import "YHViewController.h"
+#import "YHWaveProgressView.h"
+
 
 @interface YHViewController ()
 
@@ -18,8 +20,79 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
+ 
+    
+    
+//    [self setupUI];
+    [self setupUII];
+}
+
+
+
+
+#pragma mark - 设置界面
+
+- (void)setupUI {
+    YHWaveProgressView *waveProgressOne = [[YHWaveProgressView alloc] initWithFrame:CGRectMake(0, 0, 150, 150)];
+    [self.view addSubview:waveProgressOne];
+    waveProgressOne.progress = 0.2;
+    waveProgressOne.speed = 1.0;
+    waveProgressOne.waveHeight = 10;
+    waveProgressOne.isShowSingleWave = YES;
+    waveProgressOne.firstWaveColor = [UIColor redColor];
+    waveProgressOne.center = CGPointMake(CGRectGetMidX(self.view.bounds), 200);
+    
+    YHWaveProgressView *waveProgressTwo = [[YHWaveProgressView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+    [self.view addSubview:waveProgressTwo];
+    waveProgressTwo.progress = 0.6;
+    waveProgressTwo.isShowSingleWave = NO;
+    waveProgressTwo.waveHeight = 8;
+    waveProgressTwo.speed = 0.8;
+    waveProgressTwo.center = CGPointMake(CGRectGetMidX(self.view.bounds), 400);
+    waveProgressTwo.firstWaveColor = [UIColor redColor];
+    waveProgressTwo.secondWaveColor = [UIColor orangeColor];
+    
     
 }
+
+
+
+
+- (void)setupUII {
+    YHWaveProgressView *progressView = [[YHWaveProgressView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    progressView.center=CGPointMake(CGRectGetMidX(self.view.bounds), 150);
+    progressView.progress = 0.3;
+    progressView.speed = 0.5;
+    [self.view addSubview:progressView];
+    
+    YHWaveProgressView *progressView1 = [[YHWaveProgressView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    progressView1.center=CGPointMake(CGRectGetMidX(self.view.bounds), 270);
+    progressView1.progress = 0.5;
+    progressView1.waveHeight = 10;
+    progressView1.speed = 1.0;
+    progressView1.isShowSingleWave=YES;
+    progressView1.firstWaveColor = [UIColor colorWithRed:134/255.0 green:116/255.0 blue:210/255.0 alpha:1];
+    progressView1.secondWaveColor = [UIColor colorWithRed:134/255.0 green:116/255.0 blue:210/255.0 alpha:0.5];
+    [self.view addSubview:progressView1];
+    
+    YHWaveProgressView *progressView2 = [[YHWaveProgressView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    progressView2.center=CGPointMake(CGRectGetMidX(self.view.bounds), 390);
+    progressView2.progress = 0.7;
+    progressView2.waveHeight = 5;
+    progressView2.speed = 0.8;
+    progressView2.firstWaveColor = [UIColor colorWithRed:134/255.0 green:216/255.0 blue:210/255.0 alpha:1];
+    progressView2.secondWaveColor = [UIColor colorWithRed:134/255.0 green:216/255.0 blue:210/255.0 alpha:0.5];
+    [self.view addSubview:progressView2];
+    
+}
+
+
+
+
+
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

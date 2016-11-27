@@ -12,6 +12,7 @@
 		EAD36B8D1DEACB940021D2E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAD36B8C1DEACB940021D2E1 /* Assets.xcassets */; };
 		EAD36B901DEACB940021D2E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAD36B8E1DEACB940021D2E1 /* LaunchScreen.storyboard */; };
 		EAD36B991DEACC0E0021D2E1 /* YHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD36B981DEACC0E0021D2E1 /* YHViewController.m */; };
+		EAD36B9D1DEACD580021D2E1 /* YHWaveProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD36B9C1DEACD580021D2E1 /* YHWaveProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		EAD36B911DEACB940021D2E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAD36B971DEACC0E0021D2E1 /* YHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHViewController.h; sourceTree = "<group>"; };
 		EAD36B981DEACC0E0021D2E1 /* YHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHViewController.m; sourceTree = "<group>"; };
+		EAD36B9B1DEACD580021D2E1 /* YHWaveProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHWaveProgressView.h; sourceTree = "<group>"; };
+		EAD36B9C1DEACD580021D2E1 /* YHWaveProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHWaveProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 			children = (
 				EAD36B831DEACB940021D2E1 /* AppDelegate.h */,
 				EAD36B841DEACB940021D2E1 /* AppDelegate.m */,
+				EAD36B9A1DEACD2F0021D2E1 /* YHWaveProgress */,
 				EAD36B971DEACC0E0021D2E1 /* YHViewController.h */,
 				EAD36B981DEACC0E0021D2E1 /* YHViewController.m */,
 				EAD36B8C1DEACB940021D2E1 /* Assets.xcassets */,
@@ -74,6 +78,15 @@
 				EAD36B811DEACB940021D2E1 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAD36B9A1DEACD2F0021D2E1 /* YHWaveProgress */ = {
+			isa = PBXGroup;
+			children = (
+				EAD36B9B1DEACD580021D2E1 /* YHWaveProgressView.h */,
+				EAD36B9C1DEACD580021D2E1 /* YHWaveProgressView.m */,
+			);
+			path = YHWaveProgress;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +163,7 @@
 				EAD36B851DEACB940021D2E1 /* AppDelegate.m in Sources */,
 				EAD36B991DEACC0E0021D2E1 /* YHViewController.m in Sources */,
 				EAD36B821DEACB940021D2E1 /* main.m in Sources */,
+				EAD36B9D1DEACD580021D2E1 /* YHWaveProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
